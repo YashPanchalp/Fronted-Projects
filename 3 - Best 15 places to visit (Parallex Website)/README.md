@@ -6,8 +6,8 @@ It having the best recommanded places and the destinatons to visit nearby too wi
 
 Includes all nessasry photos and inforation.
 
-<img width="1899" height="909" alt="Screenshot 2025-10-15 223418" src="https://github.com/user-attachments/assets/0e4e7171-a526-40a1-8d3b-baa9083f546f" />
-<img width="1900" height="903" alt="Screenshot 2025-10-15 223448" src="https://github.com/user-attachments/assets/f0f66b21-da74-4d11-a2cc-4c8de5c49f3e" />
-<img width="1900" height="908" alt="Screenshot 2025-10-15 223502" src="https://github.com/user-attachments/assets/09f0bad5-5515-4751-b413-0c36fdb90650" />
-<img width="1900" height="903" alt="Screenshot 2025-10-15 223448" src="https://github.com/user-attachments/assets/777b6348-5904-45fc-bdb5-1356e32fce41" />
-<img width="1903" height="912" alt="Screenshot 2025-10-15 223541" src="https://github.com/user-attachments/assets/4e89b24c-9067-42f8-8263-d4cee7d81fca" />
+
+<img width="1899" height="909" alt="Screenshot 2025-10-15 223418" src="https://github.com/user-attachments/assets/e28586a4-7f5e-48d3-8916-82cb4381c779" />
+<img width="1900" height="903" alt="Screenshot 2025-10-15 223448" src="https://github.com/user-attachments/assets/91fd995d-3649-4501-8fb0-1f7737502ba2" />
+<img width="1900" height="908" alt="Screenshot 2025-10-15 223502" src="https://github.com/user-attachments/assets/c97c0e45-bbad-4c8a-b1a7-91c9f7597fc7" />
+<img width="1903" height="912" alt="Screenshot 2025-10-15 223541" src="https://github.com/user-attachments/assets/5916bf84-69b0-42bd-99e1-32d49229b374" />
