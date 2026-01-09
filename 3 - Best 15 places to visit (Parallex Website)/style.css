@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  height: 100%;
+  z-index: -1;
+  padding-bottom: 250px;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-left h2 {
+  margin: 0 1.5rem;
+  font-size: 1.5rem;
+  color:  #ff9a00;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.nav-left h2:hover {
+  transform-origin: left;
+  animation: line 1s timing-function delay iteration-count right mode;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  outline: none;
+  margin-left: -900px;
+  background-color: transparent;
+  backdrop-filter: blur(150px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-right button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0 6px 6px 0;
+  border: none;
+  background-color: rgb(255, 255, 255, 0.6);
+  color: #ff9a00;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-right button:hover {
+  background-color: #fff0e0;
+}
+/*nav bar ends*/
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  transform: translateZ(-40px) scale(5.1);
+}
+
+#fg1 {
+  width: 38%;
+  margin-left: 920px;
+  margin-top: 1050px;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  transform: translateZ(-28px) scale(3);
+}
+
+#fg2 {
+  width: 38%;
+  margin-left: -2520px;
+  margin-top: 1050px;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  transform: translateZ(-28px) scale(5.1);
+}
+
+#fg3 {
+  width: 38%;
+  margin-left: 2420px;
+  margin-top: 1050px;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  transform: translateZ(-28px) scale(3.4);
+}
+
+.MainH {
+  color: #ff9a00;
+  position: fixed;
+  margin-top: -1480px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 90px;
+  z-index: -1;
+  object-fit: cover;
+  transform: translateZ(-40px) scale(5.1);
+}
+
+section {
+  color: aliceblue;
+  padding: 3.5rem 0;
+  margin-top: 170px;
+  /* background-color: rgb(223, 141, 19); */
+  background: linear-gradient(to right, #f9a825, #ee730f, rgb(224, 153, 21));
+  backdrop-filter: blur(15px);
+}
+
+.bg {
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 94%;
+  background-attachment: fixed; /*to fix scroll image*/
+  height: 650px;
+  border-radius: 60px;
+  margin-left: 35px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bg_heading {
+  font-size: 4.2rem;
+  padding: 0 4rem;
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.09);
+  backdrop-filter: blur(1.5px);
+  top: 33%;
+  color: rgb(36, 35, 35);
+  font-family: "Montserrat";
+  left: 20%;
+  border-radius: 32px;
+}
+
+.bg_heading:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border-radius: 5px;
+  color: rgb(7, 6, 6);
+  transition: 0.8s;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 1.8rem;
+  padding: 0 10rem;
+  margin: 5rem 0;
+  height: 375px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(36, 35, 35);
+}
+
+.bg1 {
+  background-image: url(1.jpg);
+}
+.bg2 {
+  background-image: url(2.jpg);
+}
+
+.bg3 {
+  background-image: url(3.jpg);
+}
+
+.bg4 {
+  background-image: url(4.jpg);
+}
+
+.bg5 {
+  background-image: url(5.jpg);
+}
+
+.bg6 {
+  background-image: url(6.jpg);
+}
+
+.bg7 {
+  background-image: url(7.jpg);
+}
+
+.bg8 {
+  background-image: url(8.jpg);
+}
+
+.bg9 {
+  background-image: url(9.jpg);
+}
+
+.bg10 {
+  background-image: url(10.jpg);
+}
+
+.bg11 {
+  background-image: url(11.jpg);
+}
+
+.bg12 {
+  background-image: url(12.jpg);
+}
+
+.bg13 {
+  background-image: url(13.jpg);
+}
+
+.bg14 {
+  background-image: url(14.jpg);
+}
+
+.bg15 {
+  background-image: url(15.jpg);
+}
+
+@keyframes line {
+  0% {
+    border-bottom: 3px solid #ee730f;
+  }
+  50% {
+    border-bottom: 3px solid #d8711c;
+  }
+  100% {
+    border-bottom: 3px solid #ff9a00;
+  }
+}
