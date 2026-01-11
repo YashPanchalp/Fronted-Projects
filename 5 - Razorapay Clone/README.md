@@ -1,6 +1,8 @@
 # Project7-Razorpay-Clone-using-Tailwind
 Perfect UI clone of the RazorPay website using the Tailwind CSS.
 
+It includes all the hover animations and transtition effects.
+
 <img width="1890" height="905" alt="Screenshot 2025-10-22 193948" src="https://github.com/user-attachments/assets/93406008-8132-4385-9fe2-a3d338fc43ad" />
 
 
@@ -13,3 +15,4 @@ Perfect UI clone of the RazorPay website using the Tailwind CSS.
 <img width="1897" height="913" alt="Screenshot 2025-10-22 194147" src="https://github.com/user-attachments/assets/8da69242-0a25-4ff9-9589-e5498d6397f8" />
 <img width="1892" height="909" alt="Screenshot 2025-10-22 194202" src="https://github.com/user-attachments/assets/41894cf0-326f-4900-847b-1c59130cf2bd" />
 <img width="1896" height="908" alt="Screenshot 2025-10-22 194223" src="https://github.com/user-attachments/assets/3c54b217-7f07-4dd7-b077-3a773301b1fa" />
+
