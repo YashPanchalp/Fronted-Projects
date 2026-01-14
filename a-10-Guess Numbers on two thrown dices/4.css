@@ -1,0 +1,62 @@
+body {
+  /* Add a subtle animation to the background color */
+  animation: background-color-change 10s ease-in-out infinite;
+  /* Add a transition to the transform property */
+  transition: transform 0.5s ease-out;
+}
+
+button {
+  /* Add a 3D hover effect */
+  transform: perspective(1px) translateZ(0);
+  transition: all 0.3s ease-out;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  will-change: transform;
+}
+
+button:hover,
+button:focus {
+  /* Add a 3D rotation on hover */
+  transform: perspective(500px) rotateX(2deg) rotateY(2deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dice {
+  /* Add a 3D rotation to the dice */
+  transform: perspective(500px) rotateX(20deg) rotateY(20deg) rotateZ(20deg);
+  transition: all 0.3s ease-out;
+}
+
+.dice:hover {
+  /* Add a 3D rotation on hover */
+  transform: perspective(500px) rotateX(40deg) rotateY(40deg) rotateZ(40deg);
+}
+
+@keyframes background-color-change {
+  0% {
+    background: #1b1b1b;
+  }
+  50% {
+    background: #222222;
+  }
+  100% {
+    background: #1b1b1b;
+  }
+}
+
+/* Add a keyframes animation to the body */
+@keyframes page-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Run the animation */
+body {
+  animation: page-animation 10s ease-in-out infinite;
+}
