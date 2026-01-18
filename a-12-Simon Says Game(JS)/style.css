@@ -1,0 +1,116 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* BACKGROUND */
+body {
+    height: 100vh;
+    background: radial-gradient(circle at top, #1f1f35, #070710);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* GAME SCREEN */
+#screen {
+    background: linear-gradient(145deg, #141428, #0b0b18);
+    padding: 30px 40px 40px;
+    border-radius: 22px;
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.8),
+        inset 0 0 25px rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+}
+
+h2 {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-bottom: 25px;
+}
+
+h2 a {
+    color: #4fd1ff;
+    text-decoration: none;
+}
+
+/* BUTTON GRID */
+.btn-container {
+    display: flex;
+    gap: 22px;
+    perspective: 1200px;
+}
+
+.clm1,
+.clm2 {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* COMMON BUTTON STYLE */
+.clm1 div,
+.clm2 div {
+    width: 140px;
+    height: 140px;
+    border-radius: 22px;
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 0 rgba(0, 0, 0, 0.6),
+        0 28px 45px rgba(0, 0, 0, 0.75);
+
+    transform-style: preserve-3d;
+    transition: all 0.15s ease;
+}
+
+/* BUTTON COLORS (CLASSIC SIMON – MODERN) */
+.btn1 {
+    background: linear-gradient(145deg, #ff4d4d, #b71c1c);
+}
+
+.btn2 {
+    background: linear-gradient(145deg, #4dff4d, #1b8f1b);
+}
+
+.btn3 {
+    background: linear-gradient(145deg, #4d4dff, #1a237e);
+}
+
+.btn4 {
+    background: linear-gradient(145deg, #ffd84d, #f57f17);
+}
+
+/* PRESS EFFECT (3D PUSH) */
+.clm1 div:active,
+.clm2 div:active {
+    transform: translateY(10px);
+    box-shadow:
+        0 5px 0 rgba(0, 0, 0, 0.6),
+        0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+/* GAME FLASH / ACTIVE STATE (use with JS) */
+.flash {
+    filter: brightness(1.6);
+    box-shadow:
+        0 0 25px rgba(255, 255, 255, 0.9),
+        0 0 60px currentColor;
+}
+
+/* GAME OVER EFFECT */
+.game-over {
+    background: radial-gradient(circle, #ff3b3b, #450000);
+}
+
