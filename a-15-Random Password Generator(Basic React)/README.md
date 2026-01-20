@@ -1,16 +1,20 @@
-# React + Vite
+🧩 Random Password Generator (React + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and responsive password generator built with React and Tailwind CSS.
+Includes customizable options for uppercase, lowercase, numbers, and symbols —
+with a 3D animated gradient background, smooth transitions, and instant password generation.
 
-Currently, two official plugins are available:
+Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🎲 Random password generation
 
-## React Compiler
+✅ Customizable character options (A–Z, a–z, 0–9, !@#$%^&*)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎨 Stylish 3D gradient background with animations
 
-## Expanding the ESLint configuration
+⚙️ Adjustable password length
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚡ Built using React + Tailwind (fully inline styling)
+
+<img width="956" height="908" alt="Screenshot 2025-10-28 184716" src="https://github.com/user-attachments/assets/f486d9c2-2185-42d9-8576-dce655651bf7" />
+<img width="950" height="907" alt="Screenshot 2025-10-28 184658" src="https://github.com/user-attachments/assets/a165a937-de50-4483-8c26-d7fffe07d74e" />
