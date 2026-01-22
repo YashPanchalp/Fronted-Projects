@@ -4,7 +4,7 @@ A sleek and responsive password generator built with React and Tailwind CSS.
 Includes customizable options for uppercase, lowercase, numbers, and symbols —
 with a 3D animated gradient background, smooth transitions, and instant password generation.
 
-Features:
+Features of this:
 
 🎲 Random password generation
 
