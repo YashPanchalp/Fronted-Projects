@@ -1,0 +1,341 @@
+#root {
+  width: 2500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* BookMyShow-like comment & review styling 🔧 */
+:root{
+  --bms-red:#ff3b3b;
+  --bms-orange:#ff7a00;
+  --muted:#6b7280;
+  --card-bg:#ffffff;
+  --page-bg:#f3f4f6;
+}
+
+body, #root {
+  background: var(--page-bg);
+}
+
+/* Comment cards (selects sibling divs after the h2 heading)
+   Uses :has() to target only cards that contain an <h4> (the comment items).
+   This keeps the form styling separate. */
+h2 ~ div:has(> h4) {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.06);
+  border: none !important; /* override inline border */
+  margin-bottom: 12px !important; /* override inline margin */
+}
+
+/* large avatar removed */
+/* The small inline avatar next to username (h4::before) remains */
+
+h2{
+  color:#111827;
+  font-size:1.25rem;
+  margin-bottom:12px;
+  text-align:left;
+}
+
+h2 ~ div:has(> h4) h4{
+  margin:0 0 6px 0;
+  color:#0f172a;
+  font-weight:700;
+  font-size:1rem;
+}
+
+/* remarks (first paragraph) */
+h2 ~ div:has(> h4) p:nth-of-type(1){
+  margin:0 0 8px 0;
+  color:var(--muted);
+  line-height:1.45;
+  text-align:left;
+}
+
+/* rating badge (last paragraph) */
+h2 ~ div:has(> h4) p:last-of-type{
+  display:inline-block;
+  margin:0;
+  background: linear-gradient(90deg,var(--bms-red),var(--bms-orange));
+  color: black;
+  font-weight:700;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:0.85rem;
+}
+
+/* Form container — keep distinct and compact */
+form{
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  align-items: start;
+  background: transparent;
+  text-align:left;
+}
+
+/* Make inputs look like BMS input chips */
+input[type="text"], input[type="number"], textarea{
+  width:100%;
+  box-sizing:border-box;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+  background:#fff;
+  font-size:0.95rem;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(16,24,40,0.04);
+  color: #0f172a; /* dark text for readability */
+  caret-color: #0f172a;
+}
+
+/* placeholder color */
+input::placeholder, textarea::placeholder{
+  color: var(--muted);
+  opacity: 1;
+}
+
+textarea{ grid-column: 1 / -1; min-height: 80px; resize: vertical; }
+
+input:focus, textarea:focus{ border-color: var(--bms-orange); box-shadow: 0 6px 20px rgba(255,122,0,0.08); }
+
+/* submit button */
+button[type="submit"]{
+  grid-column: 2 / 3;
+  justify-self: end;
+  align-self: end;
+  background: linear-gradient(90deg,var(--bms-orange),var(--bms-red));
+  color: black;
+  border: none;
+  padding:10px 16px;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow: 0 8px 30px rgba(255,122,0,0.12);
+}
+button[type="submit"]:hover{ transform: translateY(-1px); }
+
+/* small responsive tweaks */
+@media (max-width:720px){
+  form{ grid-template-columns: 1fr; }
+  button[type="submit"]{ grid-column:1; justify-self:stretch }
+  h2, h2 ~ div:has(> h4) p:nth-of-type(1){ text-align:left }
+}
+
+/* --- Movie Review System header (CSS-only, no JSX changes) --- */
+:root{
+  --bms-red: #ff6b6b; /* light red */
+  --bms-orange: #ff9a9a; /* softer light red for gradients */
+  --bms-dark: #0b1220;
+  --muted: #6b7280;
+  --card-bg: #ffffff;
+  --page-bg: #f3f4f6;
+}
+
+body{ padding-top:20px; background:var(--page-bg); }
+body::before{
+  content: "🎬 Movie Review System";
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 64px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding: 0 20px;
+  background: linear-gradient(90deg,var(--bms-red),var(--bms-orange));
+  color: #fff;
+  font-weight:800;
+  font-size:1.15rem;
+  letter-spacing:0.6px;
+  box-shadow: 0 8px 30px rgba(11,12,15,0.25);
+  z-index: 2000;
+}
+
+/* Make root content align left (movie site style) */
+#root{
+  text-align: left;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Movie banner look (visual only) */
+h2{
+  font-size:1.4rem;
+  margin-bottom:12px;
+  color:#fff;
+  background: linear-gradient(90deg,var(--bms-dark),#3b0b12);
+  padding: 18px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.25);
+}
+
+h2::after{
+  content: ' — Audience Reviews';
+  color: #ffd6d6;
+  font-weight:600;
+  margin-left:8px;
+  font-size:0.9rem;
+}
+
+/* Comment items: polished cinema card */
+h2 ~ div:has(> h4) {
+  display:flex;
+  gap:20px;
+  align-items:flex-start;
+  background: var(--card-bg);
+  padding:16px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(16,24,40,0.08);
+  border: 1px solid rgba(16,24,40,0.04);
+  margin-bottom: 14px !important;
+  position: relative;
+  transition: transform 220ms cubic-bezier(.2,.9,.3,1), box-shadow 220ms;
+}
+
+h2 ~ div:has(> h4):hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(16,24,40,0.12);
+}
+/* Poster removed: simplified comment card layout */
+
+h2 ~ div:has(> h4){
+  /* ensure internal spacing to compensate for removed poster */
+  padding-left: 14px;
+}
+
+h2 ~ div:has(> h4) h4{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  color:var(--bms-dark);
+  font-size:1.05rem;
+  margin: 0 0 6px 0;
+}
+
+/* small circular profile avatar inline with username */
+h2 ~ div:has(> h4) h4::before{
+  content: "👤";
+  display:inline-grid;
+  place-items:center;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background: linear-gradient(135deg,#ffd29f,#ffb199);
+  color:#1f2937;
+  font-size:14px;
+  box-shadow: 0 2px 8px rgba(16,24,40,0.08);
+}
+
+h2 ~ div:has(> h4) p:nth-of-type(1){ color:#374151; margin:0 0 10px 0 }
+
+/* Layout: two-column on wide screens, single-column on small */
+@media (min-width: 720px){
+  /* make comment items display 2 per row */
+  h2 ~ div:has(> h4):not(:has(form)){
+    width: calc(50% - 12px);
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 16px;
+    box-sizing: border-box;
+  }
+  /* remove right margin on every second card */
+  h2 ~ div:has(> h4):not(:has(form)):nth-of-type(2n){ margin-right: 0; }
+
+  /* ensure the form wrapper stays block and centered under the list */
+  h2 ~ div:has(form){ display:block; }
+} 
+
+/* Form section styling: make it feel like a review submission card */
+form{
+  gap: 16px;
+  background: linear-gradient(90deg, #fff, #fff);
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.06);
+  margin-top: 18px;
+}
+
+/* Floating placeholder / label effect (CSS-only, best-effort) */
+input[type="text"], input[type="number"], textarea{
+  background:#fff;
+  color:var(--bms-dark); /* ensure text is dark */
+  padding: 14px 12px;
+  border-radius:8px;
+  border:1px solid #e6e6e6;
+}
+
+/* placeholder: static and legible (removed transform animation to avoid layout shift) */
+input::placeholder, textarea::placeholder{
+  color: var(--muted);
+  opacity: 1;
+} 
+
+input:focus, textarea:focus{ outline: none; border-color: var(--bms-orange); box-shadow: 0 8px 30px rgba(255,122,0,0.06) }
+
+button[type="submit"]{
+  background: linear-gradient(90deg,var(--bms-orange),var(--bms-red));
+  color:#0b0b0b;
+  padding: 10px 14px;
+  border-radius:8px;
+}
+
+/* Card typography and minor polish */
+h4{ font-weight:700 }
+
+
+/* small responsive tweaks: stack banner and content on small screens */
+@media (max-width:720px){
+  body{ padding-top: 96px }
+  body::before{ height:72px; font-size:1.05rem; }
+  h2{ padding: 14px; font-size:1.1rem }
+  h2 ~ div:has(> h4)::before{ display:none }
+  h2 ~ div:has(> h4){ display:block; width:100%; }
+}
+
+
+
