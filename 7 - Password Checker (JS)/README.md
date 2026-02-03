@@ -1,6 +1,7 @@
 In this simple JS project user has to give the password to acess the website :
 
 Case1: When password gets wrong , user has to try again to give correct passsword to  acess the page
+
 <img width="635" height="262" alt="Screenshot 2026-01-11 230558" src="https://github.com/user-attachments/assets/0167b6b0-8b69-4079-8421-eb9353e05ba1" />
 <img width="610" height="260" alt="Screenshot 2026-01-11 230605" src="https://github.com/user-attachments/assets/b9df019f-e909-4834-bcc5-e4ba859a9083" />
 
